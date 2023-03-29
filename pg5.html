@@ -9,22 +9,54 @@
     </head>
 <body>
     <h1>Formulário</h1>
-
+      
         <form action="script/envio.php" method="POST">
-            <label>Nome: <input type="text" name="nome"></label><br>
-            <label>E-mail: <input type="email" name="email"></label><br>
-            <label>CEP: <input type="number" name="cep"></label><br>
-            <label>Data de Nascimento: <input type="date" name="nasc"></label><br>
-            <label>Senha: <input type="password" name="senha"></label><br>
-            <label>Confirme sua Senha: <input type="password" name="senha"></label>
 
-            <input type="submit" name="enviar" value="Enviar"><br>
-            <input type="reset" name="limpar" value="Limpa Dados">
+        <table border="0">
+
+            <tr><td width="1px">
+                <label>Nome: </td><td><input type="text" name="nome"></label></td>
+            </tr>
+
+            <tr><td>
+                <label>E-mail: </td><td><input type="email" name="email"></label></td>
+            </tr>
+
+            <tr><td>
+                <label>CEP: </td><td><input type="number" name="cep"></label></td>
+            </tr>
+
+            <tr><td>
+                <label>Data de Nascimento: </td><td><input type="date" name="nasc"></label></td>
+            </tr>
+
+            <tr><td>
+                    <label>Senha: </td><td><input type="password" name="senha"></label></td>
+            </tr>
+
+            <tr><td>
+                <label>Confirme sua Senha: </td><td><input type="password" name="senha"></label></td>
+            </tr>
+            
+            <tr><td>
+                <textarea></textarea>
+            </td>
+
+            </tr>
+
+            <tr><td>
+                <input type="submit" name="enviar" value="Enviar"></td>
+
+            <td>
+                <input type="reset" name="limpar" value="Limpa Dados"></td>
+            </tr>
+            
+        </table>
 
         </form>
     
 
-    <hr>
+    <br>
 
     <a href="index.html" target="_blank">Página inicial</a><br>
 
