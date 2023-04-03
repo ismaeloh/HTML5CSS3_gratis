@@ -15,11 +15,11 @@
         <table border="0">
 
             <tr><td width="1px">
-                <label>Nome: </td><td><input type="text" name="nome"></label></td>
+                <label>Nome: </td><td><input type="text" name="nome" placeholder="digite seu nome"></label></td>
             </tr>
 
             <tr><td>
-                <label>E-mail: </td><td><input type="email" name="email"></label></td>
+                <label>E-mail: </td><td><input type="email" name="email" placeholder="nome@email.com"></label></td>
             </tr>
 
             <tr><td>
@@ -37,8 +37,17 @@
             <tr><td>
                 <label>Confirme sua Senha: </td><td><input type="password" name="senha"></label></td>
             </tr>
+
+            <tr>
+                <td><label>Documento: </label></td><td>CNPJ:<input type="radio" name="CNPJ"> CPF:<input type="radio" name="CPF"></td>
+            </tr>
+
+            <tr>
+                <td><label>Parente: </label></td><td>Filho:<input type="checkbox" name="filho"> Tio:<input type="checkbox" name="tio"></td>
+            </tr>
             
-            <tr><td>
+            <tr><td><label>Deixe sua mensagem</label></td>
+            <td>
                 <textarea></textarea>
             </td>
 
