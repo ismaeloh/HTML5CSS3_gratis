@@ -15,40 +15,40 @@
         <table border="0">
 
             <tr><td width="1px">
-                <label>Nome: </td><td><input type="text" name="nome" placeholder="digite seu nome"></label></td>
+                <label>Nome*: </td><td><input type="text" name="nome" placeholder="digite seu nome" required="required"></label></td>
             </tr>
 
             <tr><td>
-                <label>E-mail: </td><td><input type="email" name="email" placeholder="nome@email.com"></label></td>
+                <label>E-mail*: </td><td><input type="email" name="email" placeholder="digite seu email" required="required"></label></td>
             </tr>
 
             <tr><td>
-                <label>CEP: </td><td><input type="number" name="cep"></label></td>
+                <label>CEP*: </td><td><input type="number" name="cep" placeholder="digite seu cep" required="required"></label></td>
             </tr>
 
             <tr><td>
-                <label>Data de Nascimento: </td><td><input type="date" name="nasc"></label></td>
+                <label>Data de Nascimento*: </td><td><input type="date" name="nasc" required="required"></label></td>
             </tr>
 
             <tr><td>
-                    <label>Senha: </td><td><input type="password" name="senha"></label></td>
+                    <label>Senha*: </td><td><input type="password" name="senha" placeholder="digite sua senha" required="required"></label></td>
             </tr>
 
             <tr><td>
-                <label>Confirme sua Senha: </td><td><input type="password" name="senha"></label></td>
+                <label>Confirme sua Senha*: </td><td><input type="password" name="senha" placeholder="confirme sua senha" required="required"></label></td>
             </tr>
 
             <tr>
-                <td><label>Documento: </label></td><td>CNPJ:<input type="radio" name="CNPJ"> CPF:<input type="radio" name="CPF"></td>
+                <td><label>Documento*: </label></td><td>CNPJ:<input type="radio" name="CNPJ" required="required"> - CPF:<input type="radio" name="CPF"></td>
             </tr>
 
             <tr>
-                <td><label>Parente: </label></td><td>Filho:<input type="checkbox" name="filho"> Tio:<input type="checkbox" name="tio"></td>
+                <td><label>Parente: </label></td><td>Filho:<input type="checkbox" name="filho" required="required"> Tio:<input type="checkbox" name="tio"></td>
             </tr>
             
             <tr><td><label>Deixe sua mensagem</label></td>
             <td>
-                <textarea></textarea>
+                <textarea placeholder="Deixe sua mensagem" required="required" cols="21" rows="8"></textarea>
             </td>
 
             </tr>
@@ -59,6 +59,12 @@
             <td>
                 <input type="reset" name="limpar" value="Limpa Dados"></td>
             </tr>
+            <select name="Estados">
+                <option name='sp'>São Paulo</option>
+                <option name='rj'>Rio de Janeiro</option>
+                <option name='pr'>Paraná</option>
+                <option name="rs">Rio Grande do Sul</option>
+            </select>
             
         </table>
 
